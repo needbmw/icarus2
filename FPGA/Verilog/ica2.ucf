@@ -1,0 +1,59 @@
+########################################################################
+#CLOCKS AND RESET
+########################################################################
+NET "USER_CLK" LOC = "P123" | IOSTANDARD = LVTTL;           # OSCILLATOR IN 8 PIN DIP SOCKET
+
+########################################################################
+#PRESS SWITCHES
+########################################################################
+#NET "PB1"  LOC = "R7" | IOSTANDARD = SSTL1_5  | PULLUP; 
+#NET "PB2"  LOC = "W4" | IOSTANDARD = SSTL1_5  | PULLUP;
+
+NET "SW[2]"  LOC = "P138" | IOSTANDARD = LVTTL; 
+NET "SW[1]"  LOC = "P137" | IOSTANDARD = LVTTL; 
+NET "SW[0]"  LOC = "P134" | IOSTANDARD = LVTTL; 
+
+
+########################################################################
+# LEDS
+########################################################################
+ NET "LED2"  LOC = "P133"  | IOSTANDARD = LVTTL  | SLEW = SLOW ; 
+ # NET "LED3"  LOC = "W20"  | IOSTANDARD = LVTTL  | SLEW = SLOW ; 
+ NET "LED4"  LOC = "P132"  | IOSTANDARD = LVTTL  | SLEW = SLOW ; 
+ NET "LED5"  LOC = "P131"  | IOSTANDARD = LVTTL  | SLEW = SLOW ;           
+                                                                         
+########################################################################
+##USB
+########################################################################
+# NET "USB_CTS_N" LOC = L19 | IOSTANDARD = LVTTL;
+# NET "USB_DCD_N" LOC = K20 | IOSTANDARD = LVTTL;
+# NET "USB_DSR_N" LOC = J19 | IOSTANDARD = LVTTL;
+# NET "USB_R_N"   LOC = J22 | IOSTANDARD = LVTTL;
+# NET "USB_RTS_N" LOC = H20 | IOSTANDARD = LVTTL;
+# NET "USB_DTR_N" LOC = H22 | IOSTANDARD = LVTTL;
+ NET "USB_TXD"   LOC = "P105" | IOSTANDARD = LVTTL;
+ NET "USB_RXD"   LOC = "P104" | IOSTANDARD = LVTTL;
+ 
+# NET "LED_OUT[6]" LOC = "P19" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[5]" LOC = "V20" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[4]" LOC = "U20" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[3]" LOC = "V19" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[2]" LOC = "R20" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[1]" LOC = "N20" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "LED_OUT[0]" LOC = "R19" |  IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "POS_OUT[3]" LOC = "N22" | IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "POS_OUT[2]" LOC = "T22" | IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "POS_OUT[1]" LOC = "U19" | IOSTANDARD = LVTTL  | SLEW = SLOW ;
+# NET "POS_OUT[0]" LOC = "AB19" | IOSTANDARD = LVTTL  | SLEW = SLOW ;
+ 
+ NET "TX_P0" LOC = "P142" | IOSTANDARD = LVTTL; 
+ NET "TX_M0" LOC = "P141" | IOSTANDARD = LVTTL; 
+ 
+ NET "RX_P0" LOC = "P140" | IOSTANDARD = LVTTL ; 
+ NET "RX_M0" LOC = "P139" | IOSTANDARD = LVTTL ;
+ 
+ NET "TX_P1" LOC = "P79" | IOSTANDARD = LVTTL; 
+ NET "TX_M1" LOC = "P80" | IOSTANDARD = LVTTL ; 
+ 
+ NET "RX_P1" LOC = "P83" | IOSTANDARD = LVTTL ; 
+ NET "RX_M1" LOC = "P84" | IOSTANDARD = LVTTL ;
